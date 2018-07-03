@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace SON\Framework\Tasks;
 
 use SON\Framework\Modules\Contract;
 
@@ -9,7 +9,7 @@ class Module implements Contract
     public function getNamespaces() :array
     {
         return [
-            'App\\' => __DIR__ . '/src'
+            'SON\\Framework\\Tasks\\' => __DIR__ . '/src'
         ];
     }
 
