@@ -5,9 +5,10 @@ $app->middleware('before', function ($c) {
 });
 
 $app->middleware('before', function ($c) {
-    header('Content-Type: text/plain');
+    header('Content-Type: application/json');
 });
 
+/*
 $app->middleware('after', function ($c) {
     echo 'after';
 });
@@ -15,3 +16,4 @@ $app->middleware('after', function ($c) {
 $app->middleware('after', function ($c) {
     echo 'after 2';
 });
+*/

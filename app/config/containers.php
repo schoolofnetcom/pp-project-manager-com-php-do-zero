@@ -18,3 +18,7 @@ $container['db'] = function (){
 
     return $pdo;
 };
+
+$container['users_model'] = function ($c) {
+    return new \App\Models\Users($c);
+};
