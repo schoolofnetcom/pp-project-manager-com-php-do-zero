@@ -14,7 +14,10 @@
     "autoload": {
         "psr-4": {
             "SON\\Framework\\": "src"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "scripts": {
         "server": "php -S localhost:8080 -t public"
