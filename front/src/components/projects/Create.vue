@@ -88,7 +88,6 @@ export default {
     },
     methods: {
         submit() {
-            this.data.user_id = 1;
             this.data.due_date = this.due_date + ' ' + this.due_date_time + ':00';
             this.$store.dispatch('projects/create', this.data);
         }

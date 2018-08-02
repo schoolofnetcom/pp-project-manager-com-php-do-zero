@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Projects from '@/components/Projects'
 import ProjectList from '@/components/projects/List'
 import ProjectShow from '@/components/projects/Show'
+import Schedules from '@/components/Schedules'
 
 Vue.use(Router)
 
@@ -27,5 +28,9 @@ export default new Router({
         }
       ]
     },
+    {
+      path: '/schedules',
+      component: Schedules
+    }
   ]
 })

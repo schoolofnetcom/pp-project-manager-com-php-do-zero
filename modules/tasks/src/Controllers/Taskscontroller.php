@@ -2,10 +2,18 @@
 
 namespace SON\Framework\Tasks\Controllers;
 
-class TasksController
+use SON\Framework\CrudController;
+
+class TasksController extends CrudController
 {
-    public function index()
+    protected function getModel(): string
     {
-        return 'Lista de Tarefas';
+        return 'tasks_model';
+    }
+
+    public function listByProject($c, $request)
+    {
+        $id = $request->query->get('id');
+        return $c['tasks_model']->getByProjectId($id);
     }
 }
